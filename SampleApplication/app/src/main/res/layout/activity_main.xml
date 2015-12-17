@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="Hello World!" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Quotes"
+        android:id="@+id/btnGetQuotes"
+        android:layout_below="@+id/textView"
+        android:onClick="getQuotes"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="who"
+        android:id="@+id/etWho"
+        android:layout_below="@+id/btnGetQuotes"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="what"
+        android:id="@+id/etWhat"
+        android:layout_below="@+id/etWho"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert Quotes"
+        android:id="@+id/btnInsertQuotes"
+        android:layout_below="@+id/etWhat"
+        android:onClick="insertQuotes"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notify"
+        android:id="@+id/btnNotify"
+        android:layout_below="@+id/btnInsertQuotes"
+        android:onClick="notify"
+        />
+</RelativeLayout>
